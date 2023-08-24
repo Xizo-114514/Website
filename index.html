@@ -1,31 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Background Image Example</title>
-<style>
-  body {
-    background-image: url("https://www.loliapi.cn/acg/");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center; /* Center the background image */
-    margin: 0;
-    padding: 0;
-  }
-  /* Additional CSS styles for your content can be added here */
-  .content {
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Xizo Web">
+    <meta name="keywords" content="Xizo,Homepage">
+    <meta name="author" content="Xizo">
+    <title>Xizo Web</title>
+	<style>
+		body {
+			background-image: url("https://www.loliapi.cn/acg/");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center center; /* Center the background image */
+			margin: 0;
+			padding: 0;
+		}
+		.content {
+			padding: 20px;
+			text-align: center;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
+	</style>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="icon" href="https://i1.hdslb.com/bfs/face/515e092b941b10207557569c02b649cc80a74b02.jpg">
 </head>
 <body>
-  <div class="content">
+    <header id="panel" class="panel-cover">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content">
+                    <div class="ih-item circle effect right_to_left">            
+                        <a href="#" title="" class="blog-button">
+                            <div class="img"><img src="https://i1.hdslb.com/bfs/face/515e092b941b10207557569c02b649cc80a74b02.jpg" alt="img" class="js-avatar iUp profilepic"></div>
+                            <div class="info iUp">
+                                <div class="info-back">
+                                    <h2> 
+                                            你干什么！
+                                    </h2>
+                                    <p>
+                                            不许摸头喵！
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <h1 class="panel-cover__title panel-title iUp">
+                        <a href="#" title="Dmego Home">Xizo</a>
+                    </h1>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">一个无聊的高中生罢了</p>
+                    <hr class="panel-cover__divider iUp" />
+                    <div class="navigation-wrapper iUp">
+                        <div>
+                            <nav class="cover-navigation cover-navigation--primary">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="" class="blog-button">首页</a>
+                                    </li>
+									<br>
+                                    <li class="navigation__item">
+                                        <a href="" class="blog-button">关于</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="iUp">
+                            <nav class="cover-navigation social">
+                                <ul class="navigation">
 
-  </div>
+									<a href="https://space.bilibili.com/407420026" target="_blank">
+										<i class='social iconfont icon-github'></i>
+										<span style="font-size:18px;">bilibili</span>
+									</a>
+
+
+									<a href="https://github.com/Xizo-114514" target="_blank">
+										<span style="font-size:18px;">github</span>
+									</a>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay cover-slate"></div>
+        </div>
+        <div class="remark iUp">
+            <p class="power">Powered By 
+                <a href="https://github.com/dmego/home.github.io" target="_blank"> GitHub dmego/home </a> And 
+                <a href="https://www.loliapi.cn/" target="_blank"> LoliAPI </a>
+            </p>
+        </div>
+    </header>
+    <script>
+        var iUp = (function () {
+            var time = 0,
+                duration = 50,
+                clean = function () {
+                    time = 0;
+                },
+                up = function (element) {
+                    setTimeout(function () {
+                        element.classList.add("up");
+                    }, time);
+                    time += duration;
+                },
+                down = function (element) {
+                    element.classList.remove("up");
+                },
+                toggle = function (element) {
+                    setTimeout(function () {
+                        element.classList.toggle("up");
+                    }, time);
+                    time += duration;
+                };
+            return {
+                clean: clean,
+                up: up,
+                down: down,
+                toggle: toggle
+            };
+        })();
+        document.addEventListener('DOMContentLoaded', function () {
+            var iUpElements = document.querySelectorAll(".iUp");
+            iUpElements.forEach(function (element) {
+                iUp.up(element);
+            });
+
+            var avatarElement = document.querySelector(".js-avatar");
+            avatarElement.addEventListener('load', function () {
+                avatarElement.classList.add("show");
+            });
+        });
+    </script>
 </body>
 </html>
