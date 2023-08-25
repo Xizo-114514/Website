@@ -5751,12 +5751,7 @@ tbody td {
 	text-align:center;
 	color:#fff
 }
-.container {
-	position:relative;
-	z-index:500;
-	width:940px;
-	margin:0 auto
-}
+
 .content-wrapper {
 	z-index:800;
 	width:70%;
@@ -6175,7 +6170,7 @@ i {
 }.remark {
 	position:absolute;
 	z-index:900;
-	bottom:0;
+	top:0;
 	right:5px;
 	text-align:center;
 	color:#fff;
@@ -6184,6 +6179,9 @@ i {
 	padding-right:18px;
 	letter-spacing:-3px;
 	font-size:0
+}.remark.iUp.up {
+    background-color: rgba(0, 0, 0, 0.25);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width:960px) {
 }.power {
@@ -6194,4 +6192,5 @@ i {
 	line-height:16px;
 	margin:0;
 	vertical-align:middle
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 添加阴影 */
 }
