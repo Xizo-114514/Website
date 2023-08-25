@@ -8,6 +8,9 @@
     <meta name="keywords" content="Xizo,Homepage">
     <meta name="author" content="Xizo">
     <title>Xizo Web</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Xizo-114514/Website@2.0/cdn/main.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Xizo-114514/Website@2.0/cdn/APlayer.css">
+    <link rel="icon" href="https://p.sda1.dev/12/e1b0ac48f2bce9824de5fce106d6fce2/image.png">
 	<style>
 		body {
 			background-image: url("https://www.loliapi.cn/acg/");
@@ -15,8 +18,7 @@
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-position: center center;
-		}
-		.panel-cover--overlay {
+		}.panel-cover--overlay {
 			display: block;
 			position: fixed;
 			top: 50%;
@@ -29,12 +31,21 @@
 			min-height: 520px;
 			max-height: 580px;
 			background-color: rgba(0, 0, 0, 0.25);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 			border-radius: 40px;
 			backdrop-filter: blur(1px);
 			z-index: 1;
+		}.container {
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+		}.container img {
+			width: 320px;
+			position: absolute;
+			bottom: 0px;
+		}
 	</style>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Xizo-114514/Website@latest/cdn/main.css">
-    <link rel="icon" href="https://p.sda1.dev/12/e1b0ac48f2bce9824de5fce106d6fce2/image.png">
 </head>
 <body>
     <header id="panel" class="panel-cover">
@@ -65,13 +76,13 @@
                         <div>
                             <nav class="cover-navigation cover-navigation--primary">
                                 <ul class="navigation">
-					<li class="navigation__item">
-					<a href="" class="blog-button">首页</a>
-					</li>
-					<br>
-					<li class="navigation__item">
-					<a href="" class="blog-button">关于</a>
-					</li>
+									<li class="navigation__item">
+									<a href="" class="blog-button">首页</a>
+									</li>
+									<br>
+									<li class="navigation__item">
+									<a href="" class="blog-button">关于</a>
+									</li>
                                 </ul>
                             </nav>
                         </div>
@@ -79,41 +90,52 @@
                             <nav class="cover-navigation social">
                                 <ul class="navigation">
 
-					<a href="https://space.bilibili.com/407420026" target="_blank">
-						<i class='social iconfont icon-github'></i>
-						<span style="font-size:18px;">bilibili</span>
-					</a>
-	
-	
-					<a href="https://github.com/Xizo-114514" target="_blank">
-						<span style="font-size:18px;">Github</span>
-					</a>
-	
-					<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=pVjHCzQbNovNayzf1lr5Aq4BK8C2_Six&authKey=vXF5UTq2ms%2FhkNH%2BByxWrHRL5U4a0rQ%2BwYsTv5HxnmlVyszES9aTPAzFh0hYZeVB&noverify=0&group_code=891070432" target="_blank">
-						<span style="font-size:18px;">QQ群</span>
-					</a>
+									<a href="https://space.bilibili.com/407420026" target="_blank">
+										<i class='social iconfont icon-github'></i>
+										<span style="font-size:18px;">bilibili</span>
+									</a>
+					
+					
+									<a href="https://github.com/Xizo-114514" target="_blank">
+										<span style="font-size:18px;">Github</span>
+									</a>
+					
+									<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=pVjHCzQbNovNayzf1lr5Aq4BK8C2_Six&authKey=vXF5UTq2ms%2FhkNH%2BByxWrHRL5U4a0rQ%2BwYsTv5HxnmlVyszES9aTPAzFh0hYZeVB&noverify=0&group_code=891070432" target="_blank">
+										<span style="font-size:18px;">QQ群</span>
+									</a>
 
                                 </ul>
                             </nav>
                         </div>
-			<br>
-			<img src="https://counter.likepoems.com/get/@:Xizo" alt=":Xizo" width="300"/>
                     </div>
                 </div>
             </div>
             <div class="panel-cover--overlay cover-slate"></div>
         </div>
+		<div class="container">
+			<img src="https://counter.likepoems.com/get/@Xizo?theme=asoul" alt="Xizo"/>
+		</div>
         <div class="remark iUp">
-            <p class="power">Powered By 
-                <a href="https://github.com/dmego/home.github.io" target="_blank"> GitHub dmego/home </a> And 
-                <a href="https://www.loliapi.cn/" target="_blank"> LoliAPI </a>
-            </p>
-	    <p class="power">Powered By 
-                <a href="https://github.com/dmego/home.github.io" target="_blank"> GitHub dmego/home </a> And 
-                <a href="https://www.loliapi.cn/" target="_blank"> LoliAPI </a>
+			<p class="power">Powered By 
+                <a href="https://github.com/dmego/home.github.io" target="_blank"> dmego/home </a><br> And 
+                <a href="https://www.loliapi.cn/" target="_blank"> LoliAPI </a> And 
+                <a href="https://api.likepoems.com/" target="_blank"> 如诗API </a><br> And 
+				<a href="https://github.com/DIYgod/APlayer" target="_blank"> APlayer </a> And 
+				<a href="https://github.com/metowolf/MetingJS" target="_blank"> MetingJS </a>
             </p>
         </div>
+        <div class="remark2 iUp">
+			<p class="power2">
+			©2023 Xizo All rights reserved.<br>
+			网站已经悄悄的运行了:<br><span id="uptime">...</span>
+			</p>
+        </div>
     </header>
+
+	<script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+	<meting-js server="netease" type="playlist" id="7339654388" volume="0.4" fixed="true"></meting-js>
+
     <script>
         var iUp = (function () {
             var time = 0,
@@ -154,6 +176,26 @@
                 avatarElement.classList.add("show");
             });
         });
+		
+		function getUptime() {
+            const startTime = new Date('2023-08-24T21:39:00');
+            const currentTime = new Date();
+            const timeDifference = currentTime - startTime;
+            
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            return `${days} 天 ${hours} 小时 ${minutes} 分 ${seconds} 秒`;
+        }
+        function updateUptime() {
+            const uptimeElement = document.getElementById('uptime');
+            const uptime = getUptime();
+            uptimeElement.textContent = uptime;
+        }
+        updateUptime();
+        setInterval(updateUptime, 1000);
     </script>
 </body>
 </html>
