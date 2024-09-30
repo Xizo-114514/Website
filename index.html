@@ -7,8 +7,8 @@
     <meta name="description" content="Xizo Web">
     <meta name="keywords" content="Xizo,Homepage">
     <meta name="author" content="Xizo">
-    <title>Xizo Web</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Xizo-114514/Website@2.1/cdn/main.css">
+    <title>美好生活 - Xizo Web</title>
+    <link rel="stylesheet" type="text/css" href="cdn/main.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Xizo-114514/Website@2.1/cdn/APlayer.css">
     <link rel="icon" href="https://p.sda1.dev/12/e1b0ac48f2bce9824de5fce106d6fce2/image.png">
 	<style>
@@ -35,15 +35,86 @@
 			border-radius: 40px;
 			backdrop-filter: blur(1px);
 			z-index: 1;
-		}.container {
-			position: relative;
-			display: flex;
-			justify-content: flex-end;
-			align-items: flex-end;
-		}.container img {
-			width: 320px;
-			position: absolute;
-			bottom: 0px;
+		}.remark {
+			position:absolute;
+			z-index:900;
+			top:0;
+			right:0px;
+			text-align:center;
+			color:#fff;
+			opacity:.6!important;
+			padding-bottom:3px;
+			padding-right:8px;
+			padding-left:8px;
+			letter-spacing:-3px;
+			font-size:0
+		}.remark.iUp.up {
+			background-color: rgba(0, 0, 0, 0.75);
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+		}
+		@media screen and (max-width:960px) {
+		}.power {
+			display:inline-block;
+			color:#fff!important;
+			letter-spacing:0;
+			font-size:10px;
+			line-height:16px;
+			margin:0;
+			vertical-align:middle
+		}
+		.remark2 {
+			position:absolute;
+			z-index:900;
+			top:0;
+			left:0px;
+			text-align:center;
+			color:#fff;
+			opacity:.6!important;
+			padding-bottom:3px;
+			padding-right:8px;
+			padding-left:8px;
+			letter-spacing:-3px;
+			font-size:0
+		}.remark2.iUp.up {
+			background-color: rgba(0, 0, 0, 0.75);
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+		}
+		@media screen and (max-width:960px) {
+		}.power2 {
+			display:inline-block;
+			color:#fff!important;
+			letter-spacing:0;
+			font-size:10px;
+			line-height:16px;
+			margin:0;
+			vertical-align:middle
+		}
+		.remark3 {
+			position:absolute;
+			z-index:900;
+			bottom:0;
+			right:0px;
+			text-align:center;
+			color:#fff;
+			opacity:.6!important;
+			padding-bottom:3px;
+			padding-right:8px;
+			padding-left:8px;
+			letter-spacing:-3px;
+			font-size:0
+		}.remark3.iUp.up {
+			background-color: rgba(0, 0, 0, 1);
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+		}
+		@media screen and (max-width:960px) {
+		}.power3 {
+			display:inline-block;
+			color:#fff!important;
+			letter-spacing:0;
+			font-size:16px;
+			line-height:16px;
+			margin:0;
+			vertical-align:middle
 		}
 	</style>
 </head>
@@ -54,8 +125,9 @@
                 <div class="panel-main__content">
                     <div class="ih-item circle effect right_to_left">            
                         <a href="#" title="" class="blog-button">
-                            <div class="img"><img src="https://p.sda1.dev/12/e1b0ac48f2bce9824de5fce106d6fce2/image.png" alt="img" class="js-avatar iUp profilepic"></div>
+                            <div class="img"><img src="https://i1.hdslb.com/bfs/face/515e092b941b10207557569c02b649cc80a74b02.jpg" alt="img" class="js-avatar iUp profilepic"></div>
                             <div class="info iUp">
+<!--
                                 <div class="info-back">
                                     <h2> 
                                             你干什么！
@@ -64,13 +136,14 @@
                                             不许摸头喵！
                                     </p>
                                 </div>
+-->
                             </div>
                         </a>
                     </div>
                     <h1 class="panel-cover__title panel-title iUp">
                         <a href="#" title="Xizo Web">Xizo</a>
                     </h1>
-                    <p class="panel-cover__subtitle panel-subtitle iUp">一个无聊的高中生罢了</p>
+                    <!--  <p class="panel-cover__subtitle panel-subtitle iUp">一个无聊的高中生罢了</p>  -->
                     <hr class="panel-cover__divider iUp" />
                     <div class="navigation-wrapper iUp">
                         <div>
@@ -112,23 +185,23 @@
             </div>
             <div class="panel-cover--overlay cover-slate"></div>
         </div>
-		<div class="container">
-			<img src="https://counter.likepoems.com/get/@Xizo?theme=asoul" alt="Xizo"/>
-		</div>
         <div class="remark iUp">
 			<p class="power">Powered By 
                 <a href="https://github.com/dmego/home.github.io" target="_blank"> dmego/home </a><br> And 
-                <a href="https://www.loliapi.cn/" target="_blank"> LoliAPI </a> And 
-                <a href="https://api.likepoems.com/" target="_blank"> 如诗API </a><br> And 
+                <a href="https://www.loliapi.cn/" target="_blank"> LoliAPI </a>
+                <a href="" target="_blank">  </a><br> And 
 				<a href="https://github.com/DIYgod/APlayer" target="_blank"> APlayer </a> And 
 				<a href="https://github.com/metowolf/MetingJS" target="_blank"> MetingJS </a>
             </p>
         </div>
         <div class="remark2 iUp">
 			<p class="power2">
-			©2023 Xizo All rights reserved.<br>
+			©2024 Xizo All rights reserved.<br>
 			网站已经悄悄的运行了:<br><span id="uptime">...</span>
 			</p>
+        </div>
+		<div class="remark3 iUp">
+			<a class="power3" href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022010203号-1</a>
         </div>
     </header>
 
